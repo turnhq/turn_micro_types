@@ -1,0 +1,23 @@
+[project]
+name = "turn_micro_types"
+version = "0.0.1"
+authors = [
+  { name="David Cook", email="david@turn.ai" },
+]
+description = "Client library for connecting with Turn's notifications microservice."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic >=1.10.5",
+    "typing-extensions >= 4.4.0"
+]
+
+[options]
+package_dir="src"
+
+[options.packages.find]
+where="src"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
