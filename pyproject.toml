@@ -15,6 +15,8 @@ dependencies = [
 
 [options]
 package_dir="src"
+include_package_data = True
+
 
 [options.packages.find]
 where="src"
