@@ -20,7 +20,7 @@ package_dir="src"
 where="src"
 
 [tool.setuptools.package-data]
-turn_micro_types = ["py.typed"]
+turn_micro_types = ["src/py.typed"]
 
 [build-system]
 requires = ["setuptools>=61.0"]
