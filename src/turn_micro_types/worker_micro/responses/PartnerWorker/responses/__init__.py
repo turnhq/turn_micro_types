@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 from typing import Optional
 from uuid import UUID
 from pydantic import BaseModel
@@ -9,7 +9,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     middle_name: Optional[str] = None
-    date_of_birth: Optional[datetime] = None
+    date_of_birth: Optional[date] = None
     package_id: Optional[int] = None
     uuid: Optional[UUID] = None
     worker_id: Optional[UUID] = None
