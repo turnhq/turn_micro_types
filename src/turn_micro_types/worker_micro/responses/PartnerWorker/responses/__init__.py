@@ -10,7 +10,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     last_name: Optional[str] = None
     middle_name: Optional[str] = None
     date_of_birth: Optional[date] = None
-    package_id: Optional[int] = None
+    package_id: Optional[str] = None
     uuid: Optional[UUID] = None
     worker_id: Optional[UUID] = None
     candidate_consent_email_id: Optional[str] = None
