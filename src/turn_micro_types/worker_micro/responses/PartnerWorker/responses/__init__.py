@@ -6,6 +6,9 @@ from pydantic import BaseModel
 
 class PartnerWorkerDetailsSchema(BaseModel):
     id: int
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
+    middle_name: Optional[str] = None
     uuid: Optional[UUID] = None
     worker_id: Optional[UUID] = None
     candidate_consent_email_id: Optional[str] = None
