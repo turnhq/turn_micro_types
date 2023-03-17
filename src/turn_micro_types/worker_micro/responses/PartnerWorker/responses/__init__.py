@@ -1,7 +1,11 @@
 from datetime import date, datetime
-from typing import Optional
+from typing import List, Optional
 from uuid import UUID
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+
+from turn_micro_types.worker_micro.responses.PartnerWorker.responses.partner_worker_document import (  # noqa: E501
+    PartnerWorkerDocumentEntry,
+)
 
 
 class PartnerWorkerDetailsSchema(BaseModel):
@@ -47,3 +51,5 @@ class PartnerWorkerDetailsSchema(BaseModel):
     completion_date: Optional[datetime] = None
     city: Optional[str] = None
     state: Optional[str] = None
+    documents: List[PartnerWorkerDocumentEntry] = Field(default_factory=list)
+    ssn: Optional[str] = None
