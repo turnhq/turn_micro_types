@@ -15,3 +15,4 @@ class InternalCommsReferencesPWPayload(BaseModel):
     partner_name: str
     comm_type: SupportEmailCommunicationCategory
     support_email: Optional[str] = None
+    info_for_agent: Optional[str] = None
