@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from typing import List, Optional
 from uuid import UUID
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl
 
 from turn_micro_types.worker_micro.responses.PartnerWorker.responses.partner_worker_document import (  # noqa: E501
     PartnerWorkerDocumentEntry,
@@ -32,9 +32,9 @@ class PartnerWorkerDetailsSchema(BaseModel):
     is_ssn_random: Optional[int] = None
     drivers_license_state: Optional[str] = None
     drivers_license_number: Optional[str] = None
-    drivers_license_front_image: Optional[str] = None
+    drivers_license_front_image_url: Optional[HttpUrl] = None
     drivers_license_expiration_date: Optional[date] = None
-    partner_worker_id_document: Optional[str] = None
+    partner_worker_id_document_url: Optional[HttpUrl] = None
     zipcode: Optional[str] = None
     phone_number: Optional[str] = None
     email: Optional[str] = None
