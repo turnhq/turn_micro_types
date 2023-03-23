@@ -19,6 +19,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     uuid: Optional[UUID] = None
     worker_id: Optional[UUID] = None
     candidate_consent_email_id: Optional[str] = None
+    signature_img: Optional[str] = None
     partner_id: int
     worker_consent: Optional[bool] = False
     worker_assent: Optional[bool] = False
