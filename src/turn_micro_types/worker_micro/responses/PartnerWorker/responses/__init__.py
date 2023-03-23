@@ -13,6 +13,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     middle_name: Optional[str] = None
+    mother_maiden_name: Optional[str] = None
     date_of_birth: Optional[date] = None
     package_id: Optional[str] = None
     uuid: Optional[UUID] = None
@@ -30,6 +31,9 @@ class PartnerWorkerDetailsSchema(BaseModel):
     is_ssn_random: Optional[int] = None
     drivers_license_state: Optional[str] = None
     drivers_license_number: Optional[str] = None
+    drivers_license_front_image: Optional[str] = None
+    drivers_license_expiration_date: Optional[date] = None
+    partner_worker_id_document: Optional[str] = None
     zipcode: Optional[str] = None
     phone_number: Optional[str] = None
     email: Optional[str] = None
