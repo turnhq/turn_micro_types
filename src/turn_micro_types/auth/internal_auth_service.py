@@ -12,8 +12,14 @@ class InternalAuthService:
     which is being used.
     """
 
-    def __init__(self, public_key: str) -> None:
+    __slots__ = ("public_key", "audience")
+
+    public_key: str
+    audience: str
+
+    def __init__(self, public_key: str, audience: str) -> None:
         self.public_key = public_key
+        self.audience = audience
 
     def authenticate(self, token: str) -> DecodedServerSideToken:
         """
