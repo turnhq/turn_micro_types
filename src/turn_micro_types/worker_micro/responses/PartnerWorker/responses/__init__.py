@@ -16,7 +16,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     mother_maiden_name: Optional[str] = None
     date_of_birth: Optional[date] = None
     package_id: Optional[str] = None
-    uuid: Optional[UUID] = None
+    uuid: UUID
     worker_id: Optional[UUID] = None
     candidate_consent_email_id: Optional[str] = None
     signature_img: Optional[str] = None
@@ -47,7 +47,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     manual_background_check_report_url: Optional[str] = None
     is_mvr_report_updated: Optional[bool] = False
     reference_id: Optional[str] = None
-    turn_id: Optional[str] = None
+    turn_id: str
     workflow_turn_id: Optional[str] = None
     workflow_package_id: Optional[str] = None
     check_status: Optional[str] = None
