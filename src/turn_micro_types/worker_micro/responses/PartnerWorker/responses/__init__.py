@@ -21,6 +21,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     candidate_consent_email_id: Optional[str] = None
     signature_img: Optional[str] = None
     partner_id: int
+    partner_name: str
     worker_consent: Optional[bool] = False
     worker_assent: Optional[bool] = False
     finish_review: Optional[bool] = False
