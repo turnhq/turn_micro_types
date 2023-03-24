@@ -32,6 +32,6 @@ class InternalAuthService:
             token,
             self.public_key,
             algorithms=["RS256"],
-            audience="https://turner-internal.auth0.com/api/v2/",
+            audience=self.audience,
         )
         return cast(DecodedServerSideToken, decoded)
