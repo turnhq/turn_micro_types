@@ -16,7 +16,7 @@ class PartnerWorkerDetailsSchema(BaseModel):
     mother_maiden_name: Optional[str] = None
     date_of_birth: Optional[date] = None
     package_id: Optional[str] = None
-    uuid: UUID
+    uuid: Optional[UUID] = None
     worker_id: Optional[UUID] = None
     candidate_consent_email_id: Optional[str] = None
     signature_img: Optional[str] = None
