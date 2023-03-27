@@ -9,7 +9,7 @@ from turn_micro_types.communications_protocol.constants import (
 
 class InternalCommsReferencesPWPayload(BaseModel):
     pw_id: int
-    pw_uuid: UUID
+    pw_uuid: Optional[UUID] = None
     turn_id: str
     partner_id: int
     partner_name: str
