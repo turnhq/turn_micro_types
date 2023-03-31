@@ -8,12 +8,36 @@ from turn_micro_types.worker_micro.responses.PartnerWorker.responses.partner_wor
 )
 
 
+class PartnerWorkerAddressSchema(BaseModel):
+    id: Optional[UUID] = None
+    is_current_address: Optional[bool] = None
+    is_added_manually: Optional[bool] = None
+    address1: Optional[str] = None
+    address2: Optional[str] = None
+    city: Optional[str] = None
+    state: Optional[str] = None
+    county: Optional[str] = None
+    latitude: Optional[str] = None
+    longitude: Optional[str] = None
+    zip: Optional[str] = None
+    zip4: Optional[str] = None
+    first_seen: Optional[datetime] = None
+    last_seen: Optional[datetime] = None
+    report_token: Optional[str] = None
+    search_result_uuid: Optional[UUID] = None
+    hash: Optional[str] = None
+    create_timestamp: Optional[datetime] = None
+    tlo_order: Optional[int] = None
+    fips: Optional[int] = None
+
+
 class PartnerWorkerDetailsSchema(BaseModel):
     id: int
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     middle_name: Optional[str] = None
     mother_maiden_name: Optional[str] = None
+    address: Optional[PartnerWorkerAddressSchema] = None
     date_of_birth: Optional[date] = None
     package_id: Optional[str] = None
     uuid: Optional[UUID] = None
