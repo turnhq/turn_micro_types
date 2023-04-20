@@ -1,0 +1,27 @@
+from enum import Enum
+
+
+class InvitationState(str, Enum):
+    CREATED = "created"
+    PENDING = "pending"
+    CANCELLED = "cancelled"
+    QUEUED = "queued"
+    STARTED = "started"
+    STARTED_APPLY = "started__start_apply"
+    STARTED_DETAILS = "started__start_details"
+    STARTED_SCREENERS = "started__start_screeners"
+    STARTED_DOWNLOAD = "started__start_download"
+    STARTED_BGC = "started__start_bgc_consent"
+    STARTED_BGC_PROCESSING = "started__start_bgc_processing"
+    ONBOARDING = "onboarding"
+    WITHDRAW = "withdraw"
+    WITHDRAW_OPT_OUT = "withdraw__opt_out"
+    WITHDRAW_APPLICATION = "withdraw__application"
+    REJECTED = "rejected"
+    REJECTED_KNOCKED_OUT = "rejected__knocked_out"
+    REJECTED_BGC = "rejected__bgc"
+    REJECTED_PARTNER = "rejected__partner"
+    INTERVIEW = "interview"
+    REVIEW = "review"
+    ACCEPTED = "accepted"
+    CLOSED = "closed"
