@@ -13,3 +13,4 @@ class SupportEmailCommunicationCategory(str, Enum):
     WSS_ATTENTION = "WSS attention"
     WSS_FEDERAL_ATTENTION = "WSS federal attention"
     PARTNER_WORKER_REVIEW = "Partner Worker Review"
+    INFORM_DATA_PR_MVR_REVIEW = "Required information from InformData for PR MVR"
