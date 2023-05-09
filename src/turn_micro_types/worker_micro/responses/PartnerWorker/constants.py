@@ -18,3 +18,4 @@ class PARTNER_WORKER_STATES(StateMachineOptions):
     SSN_TRACE_FAILED = "review__identity"
     MVR_FAILED = "review__mvr"
     COMPLIANCE = "review__qa"
+    REVIEW_SEX_OFFENDER = "review__so"
