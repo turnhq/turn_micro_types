@@ -1,8 +1,8 @@
 import os
-from src.turn_alerts.alerts import AlertAPI # type: ignore
+from src.turn_alerts.alerts import AlertAPI  # type: ignore
 
-from src.turn_alerts.schemas.create_alerts import CreateAlertPayload # type: ignore
-from src.turn_alerts.schemas.types import AlertTypeEnum, ObjectTypeEnum # type: ignore
+from src.turn_alerts.schemas.create_alerts import CreateAlertPayload  # type: ignore
+from src.turn_alerts.schemas.types import AlertTypeEnum, ObjectTypeEnum  # type: ignore
 
 token = os.environ.get("TOKEN")
 host = os.environ.get("HOST")
