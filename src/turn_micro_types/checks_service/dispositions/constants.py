@@ -12,6 +12,8 @@ class DispositionDescription(enum.Enum):
     DISMISSAL = "DISMISSAL"
     GUILTY_PLEA = "GUILTY PLEA"
     PENDING = "PENDING"
+    NOLO = "NOLO"
+    NOLLE = "NOLLE"
 
 
 class DispositionClassification(enum.Enum):
