@@ -13,8 +13,7 @@ class Meta(enum.EnumMeta):
     pass
 
 
-class StateMachineOptions(str, enum.Enum, metaclass=Meta):
-    ...
+class StateMachineOptions(str, enum.Enum, metaclass=Meta): ...
 
 
 StateMachineOptionsType = TypeVar(
