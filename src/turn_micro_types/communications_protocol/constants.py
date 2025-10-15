@@ -15,3 +15,4 @@ class SupportEmailCommunicationCategory(str, Enum):
     PARTNER_WORKER_REVIEW = "Partner Worker Review"
     INFORM_DATA_REVIEW = "Required information from InformData"
     PARTNER_WORKER_MISSING_DATA = "Information not provided by applicant "
+    IDV_PROCESS_FAILED = "IDV Process has failed"
