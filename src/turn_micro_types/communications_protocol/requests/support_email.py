@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Union
 from uuid import UUID
 
 from pydantic import BaseModel, EmailStr, Field, StrictInt, StrictStr
@@ -13,6 +13,6 @@ class InternalCommsReferencesPWPayload(BaseModel):
     turn_id: str = Field(regex="^C\\d{10}$")
     partner_id: StrictInt
     partner_name: StrictStr
-    comm_type: SupportEmailCommunicationCategory
+    comm_type: Optional[Union[SupportEmailCommunicationCategory, str]]
     support_email: Optional[EmailStr] = None
     info_for_agent: Optional[StrictStr] = None
