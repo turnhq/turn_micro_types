@@ -16,3 +16,4 @@ class SupportEmailCommunicationCategory(str, Enum):
     INFORM_DATA_REVIEW = "Required information from InformData"
     PARTNER_WORKER_MISSING_DATA = "Information not provided by applicant "
     IDV_PROCESS_FAILED = "IDV Process has failed"
+    MANUAL_CRIM_CM_ENROLLMENT_FAILED = "Manual CRIM Monitoring Enrollment failed"
